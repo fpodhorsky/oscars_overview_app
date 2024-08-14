@@ -7,7 +7,7 @@
 2. Navigate to root and then to app directory
 
    ```sh
-   cd app
+   cd oscars_overview_app/app
    ```
 
 3. Install composer
@@ -23,3 +23,5 @@
    ```
 
    **Please wait this might take a several minutes...**
+
+5. If you made all steps correctly, you will be able to access the web app on localhost
