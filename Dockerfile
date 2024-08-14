@@ -1,6 +1,13 @@
 FROM php:8.2-apache
+
 RUN apt-get update && apt upgrade -y
-ADD ./src /var/www/html
+RUN a2enmod rewrite
+
+ADD ./app /var/www/html
+
+ENV APACHE_DOCUMENT_ROOT /var/www/html/public
+RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
+
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 EXPOSE 80

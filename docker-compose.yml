@@ -3,6 +3,6 @@ services:
     build:
       context: .
     volumes:
-      - ./src:/var/www/html
+      - ./app:/var/www/html
     ports:
       - "80:80"
