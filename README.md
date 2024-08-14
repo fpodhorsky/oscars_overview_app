@@ -2,19 +2,21 @@
 
 ## Run the application
 
-1. Navigate to app directory
+1. Clone the repository to your computer
+
+2. Navigate to root and then to app directory
 
    ```sh
    cd app
    ```
 
-2. Install composer
+3. Install composer
 
    ```sh
    composer install
    ```
 
-3. Start the application
+4. Start the application
 
    ```sh
    docker-compose up -d
