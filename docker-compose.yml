@@ -1,8 +1,10 @@
 services:
-  app:
+  oscars_overview_app:
+    container_name: oscars_overview_app
     build:
       context: .
     volumes:
-      - ./app:/var/www/html
+      - ./app/src:/var/www/html/src
+      - ./app/includes:/var/www/html/includes
     ports:
       - "80:80"
