@@ -4,24 +4,20 @@
 
 1. Clone the repository to your computer
 
-2. Navigate to root and then to app directory
+2. Navigate to root directory
 
    ```sh
-   cd oscars_overview_app/app
+   cd oscars_overview_app
    ```
 
-3. Install composer
+3. Start the application
 
    ```sh
-   composer install
+   docker-compose up
    ```
 
-4. Start the application
-
-   ```sh
-   docker-compose up -d
-   ```
+   You can use "-d" flag to run docker-compose in detached state.
 
    **Please wait this might take a several minutes...**
 
-5. If you made all steps correctly, you will be able to access the web app on localhost
+4. If you made all steps correctly, you will be able to access the web app on localhost
